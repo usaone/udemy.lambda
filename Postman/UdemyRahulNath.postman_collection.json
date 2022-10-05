@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "0244b81c-9b5e-425d-9358-d3cd27e425a9",
+		"name": "UdemyRahulNath",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET User by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://obrcj30ji1.execute-api.us-east-1.amazonaws.com/users/{{userId}}",
+					"protocol": "https",
+					"host": [
+						"obrcj30ji1",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Id\":\"555b0984-ebb0-469b-801c-27f7dc145dc9\",\"Name\":\"Postman New\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://obrcj30ji1.execute-api.us-east-1.amazonaws.com/users/{{userId}}",
+					"protocol": "https",
+					"host": [
+						"obrcj30ji1",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://obrcj30ji1.execute-api.us-east-1.amazonaws.com/users/{{userId}}",
+					"protocol": "https",
+					"host": [
+						"obrcj30ji1",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "userId",
+			"value": "96bb73f1-ef17-456a-87f9-5b77684f561a"
+		}
+	]
+}
